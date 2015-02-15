@@ -1,24 +1,12 @@
-head	1.1;
-access;
-symbols;
-locks; strict;
-comment	@// @;
-
-
-1.1
-date	2015.02.15.06.56.18;	author baihaoquan;	state Exp;
-branches;
-next	;
-
-
-desc
-@ll
-@
-
-
-1.1
-log
-@Initial revision
-@
-text
-@@
+class Solution {
+public:
+    int titleToNumber(string s) {
+        int retNumber = 0;
+        for (int i=0; i<s.length(); i++) {
+            int val = s[i] - 'A' + 1;
+            retNumber = retNumber * 26 + val;
+        }
+        
+        return retNumber;
+    }
+};
