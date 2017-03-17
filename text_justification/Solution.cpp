@@ -32,7 +32,6 @@ public:
                     appendSpace = numOfSpace / numOfGap + (it - begin < (numOfSpace % numOfGap));
                 }
                 
-                
                 line += *it;
                 if (it != end-1) line += string(appendSpace, ' ');
             }
